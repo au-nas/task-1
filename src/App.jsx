@@ -1,8 +1,8 @@
-import ReactLogo from './assets/react.svg';
+import ReactLogo from './assets/react.svg'; // декларативный стиль показывает что должно отобразиться
 // import ReactLogo from './assets/react.svg?react';
 
-export const App = () => {
-	return (
+export const App = () => { // императивный стиль
+	return ( // все остальное декларативный
 		<div className="App">
 			<header className="App-header">
 				{/* <ReactLogo /> */}
@@ -15,6 +15,7 @@ export const App = () => {
 				>
 					Learn React
 				</a>
+				<p> {new Date().getFullYear()} </p>  /* императивный стиль */
 			</header>
 		</div>
 	);
